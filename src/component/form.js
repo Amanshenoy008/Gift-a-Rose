@@ -11,6 +11,9 @@ const Form = () => {
     const [from,setfrom]=useState('')
     const [message,setmessage]= useState('')
     const [date,setdate]=useState('')
+    const [sel1,setsel1]=useState(false)
+    const [sel2,setsel2]=useState(false)
+    const [sel3,setsel3]=useState(false)
     let bb
     let bnew
 
@@ -28,8 +31,20 @@ const Form = () => {
         
     }
 
-    const handleclick=()=>{
-
+    const handleclick1=()=>{
+        setsel1(true)
+        setsel2(false)
+        setsel3(false)
+    }
+    const handleclick2=()=>{
+        setsel2(true)
+        setsel1(false)
+        setsel3(false)
+    }
+    const handleclick3=()=>{
+        setsel2(false)
+        setsel1(false)
+        setsel3(true)
     }
 
     
@@ -41,11 +56,11 @@ const Form = () => {
 
         <form onSubmit={handlesubmit} className="ff">
             <label>To:-</label>
-            <input type="text" onChange={(e)=>setto(e.target.value)} />
-            <label>From:-</label>
-            <input type="text" onChange={(e)=>setfrom(e.target.value)} />
+            <input type="text" onChange={(e)=>setto(e.target.value)} className="v1"/>
+            <label>From:-(<i>Optional</i>)</label>
+            <input type="text" onChange={(e)=>setfrom(e.target.value)} className="v2"/>
             <label>Message</label>
-            <textarea name="" id="" cols="30" rows="10" onChange={(e)=>setmessage(e.target.value)}></textarea>
+            <textarea name="" id="" cols="30" rows="3" onChange={(e)=>setmessage(e.target.value)}></textarea>
             <div className="flex-btn">
             <button>submit</button>
 
@@ -55,9 +70,9 @@ const Form = () => {
 
         <div className="flex-this">  
             
-                <Image src={Red} alt=":-(" onClick={handleclick} className="i1"/>
-                <Image src={Yel} alt=":-(" onClick={handleclick} className="i2"/>
-                <Image src={Purple} alt=":-(" onClick={handleclick} className="i3"/>
+                <Image src={Red} alt=":-(" onClick={handleclick1} className={(sel1? 'fi1': "i1")}/>
+                <Image src={Yel} alt=":-(" onClick={handleclick2} className={sel2? 'fi2' : "i2"}/>
+                <Image src={Purple} alt=":-(" onClick={handleclick3} className={sel3? 'fi3' :"i3"}/>
             
         </div>
 
