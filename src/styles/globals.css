@@ -4,7 +4,8 @@
     padding:0;
     margin:0;
     font-family: 'Lato', sans-serif;
-
+    font-size: large;
+    font-weight: 700;
 }
 
 
@@ -73,12 +74,20 @@ transition: all 1s;
 
 .v1,.v2{
     width:180px;
+    padding: 10px;
 }
+.v1,.v2,.v3{
+    border-radius: 10px;
+}
+
 
 button{
     width:80px;
     border-radius: 10px;
     height: 30px;
+    background-color: #E55451;
+    color:aliceblue;
+    cursor:pointer;
 }
 .flex-btn{
     width:100%;
@@ -88,10 +97,20 @@ button{
     
 }
 
+.flex-this{
+    width:500px;
+}
+.flex-this>p{
+    display: flex;
+    justify-content: center;
+    font-size: medium;
+}
+
 .i1,.i2,.i3{
-    width:90px;
-    height: 100px;
-    
+    width:120px;
+    height: 130px;
+    cursor: pointer;
+    border-radius: 10px;
 }
 
 .ff{
@@ -103,6 +122,8 @@ button{
 
 .form-main{
     display: flex;
+    padding: 20px;
+    gap:60px;
 }
 
 .i2{
@@ -134,27 +155,47 @@ button{
     scale:1.2
 }
 .fi1{
-    width:90px;
-    height: 100px;
+    width:120px;
+    height: 130px;
     z-index: -1;
     transform: rotate(-20deg);
     box-shadow: 7.2px 14.4px 14.4px hsl(0deg 0% 0% / 0.28);
     scale: 1.2;
+    border-radius: 10px;
+
 }
 .fi2{
-    width:90px;
-    height: 100px;
+    width:120px;
+    height: 130px;
     z-index: -1;
-    
+    border-radius: 10px;
     box-shadow: 7.2px 14.4px 14.4px hsl(0deg 0% 0% / 0.28);
     scale: 1.2;
 }
 
 .fi3{
-    width:90px;
-    height: 100px;
+    width:120px;
+    height: 130px;
     z-index: -1;
+    border-radius: 10px;
     transform: rotate(20deg);
     box-shadow: 7.2px 14.4px 14.4px hsl(0deg 0% 0% / 0.28);
     scale: 1.2;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@import url('https://fonts.googleapis.com/css2?family=Love+Light&display=swap');
+h1{
+    font-weight: 900;
+    font-size: 30px;
+    color:rosybrown;
+    font-family: 'Love Light', cursive;
+}
+.behind-fodo{
+    position: absolute;
+    
 }

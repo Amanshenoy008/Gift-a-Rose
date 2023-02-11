@@ -60,11 +60,12 @@ const Form = () => {
             <label>From:-(<i>Optional</i>)</label>
             <input type="text" onChange={(e)=>setfrom(e.target.value)} className="v2"/>
             <label>Message</label>
-            <textarea name="" id="" cols="30" rows="3" onChange={(e)=>setmessage(e.target.value)}></textarea>
+            <textarea name="" id="" cols="30" rows="3" className="v3" onChange={(e)=>setmessage(e.target.value)}></textarea>
             <div className="flex-btn">
-            <button>submit</button>
+            <button>Submit</button>
 
-            <input type="date" required onChange={(e)=>{setdate(e.target.value)}}/>
+            <input type="date" required  className="cal"
+            onChange={(e)=>{setdate(e.target.value)}}/>
             </div>
         </form>
 
@@ -73,7 +74,7 @@ const Form = () => {
                 <Image src={Red} alt=":-(" onClick={handleclick1} className={(sel1? 'fi1': "i1")}/>
                 <Image src={Yel} alt=":-(" onClick={handleclick2} className={sel2? 'fi2' : "i2"}/>
                 <Image src={Purple} alt=":-(" onClick={handleclick3} className={sel3? 'fi3' :"i3"}/>
-            
+                <p>Pick any one</p>
         </div>
 
 
