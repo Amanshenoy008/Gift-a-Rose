@@ -4,7 +4,7 @@ import Bnav from "@/component/bnav"
 export default function Home() {
   return (
     <div className="main">
-      <Bnav />
+      <Form />
       
     </div>
   )

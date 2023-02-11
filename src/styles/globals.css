@@ -71,3 +71,14 @@ transition: all 1s;
 button{
     width:300px;
 }
+
+.i1,.i2,.i3{
+    width:90px;
+    height: 100px;
+}
+
+.ff{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
