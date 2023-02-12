@@ -50,13 +50,13 @@ transition: all 1s;
 
 
 .bnav-main > div:nth-child(1),.bnav-main > div:nth-child(2){
-    border-right: 2px solid aliceblue;
+    border-right: 0px solid aliceblue;
     transition: all 1s;
+
 }
 
 .bnav-main > div:nth-child(1):hover , .bnav-main > div:nth-child(2):hover{
-    border-right:0px ;
-    border-bottom: 2px solid aliceblue;
+    border:0px 2px solid aliceblue;
     
 }
 
@@ -67,7 +67,10 @@ transition: all 1s;
 .l1,.l2{
     width: 40px;
     height: 40px;
+    cursor: pointer;
 }
+
+
 
 .v1,.v2{
     width:180px;

@@ -1,8 +1,6 @@
-import { FcSms } from "react-icons/fc"
+import { FcHome } from "react-icons/fc"
 import { FcLike } from "react-icons/fc";
-import { motion, AnimatePresence } from "framer-motion";
-
-
+import Link from 'next/link'
 
 const Bnav = () => {
 
@@ -14,16 +12,21 @@ const Bnav = () => {
     }
     return ( <>
     <div className="bnav-main">
-            <div>
-                <FcSms className="l1"  onClick={handleclick1}/>
-                <p>Sent</p>
+            
+            
+            <div><Link href={'/'}>
+                <FcHome className="l1"/>
+                <p>Home</p>
+                </Link>
             </div>
 
             <div>
-
+                <Link href={'/sent'}>
                 <FcLike className="l2" onClick={handleclick2}/>
                 <p>Received</p>
+                </Link>
             </div>
+            
 
 
     </div>
