@@ -28,6 +28,22 @@ const Form = () => {
         }
         
         console.log(date)
+        
+        fetch('http://localhost:4000/lol',{
+        method:'POST',
+        body:JSON.stringify({
+            to:to,
+            from:from,
+            message:message,
+        }),
+        headers: {
+            "Content-type": "application/json; charset=UTF-8"
+        }
+        }).then(data=>data.json())
+        .then(d=>{
+            console.log(d)
+        })
+
         alert(`Rose will be sent to ${to} on ${date} `)
     }
 
