@@ -11,7 +11,9 @@ export default function Home() {
 
       <Form />
       </div>
-      
+      <div>
+        <Bnav />
+      </div>
     </div>
   )
 }

@@ -28,7 +28,7 @@ const Form = () => {
         }
         
         console.log(date)
-        
+        alert(`Rose will be sent to ${to} on ${date} `)
     }
 
     const handleclick1=()=>{
