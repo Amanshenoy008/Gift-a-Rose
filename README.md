@@ -1,5 +1,5 @@
 ### Disclaimer
-This project was Entirely made during the duration of HashHack 5 hackathon , with no code snippet copied from any other project.
+This project was Entirely made during the duration of Hack JMI hackathon , with no code snippet copied from any other project.
 
 ### About
 As Valentine day is around the corner, this project aims to help the valentines to gift a rose whomever they are willing to using the Twilio api.
