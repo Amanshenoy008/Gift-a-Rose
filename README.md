@@ -11,9 +11,11 @@ As Valentine day is around the corner, this project aims to help the valentines 
 
 ### Setting up the project
 <ol>
-    <li>Clone the repo</li>
+    <li>Clone the repo "gift a rose" </li>
     <li>Open the cmd in the cloned repo directory</li>
     <li>`npm i`</li>
     <li>`npm run dev`</li>
+    <li>Clone the repo 'gar backend'</li>
+    <li> In the cmd run `nodemon server.js`</li>
 
 </ol>
